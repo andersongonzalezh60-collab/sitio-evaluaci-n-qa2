@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Prueba - 4to Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MiSitio QA</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Prueba Funcional: Formulario</h2>
+            <form id="miFormulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" required>
+                </div>
+                <button type="submit">Enviar Datos</button>
+            </form>
+            <p id="mensajeFormulario" class="hidden"></p>
+        </section>
+
+        <section class="card">
+            <h2>Prueba de API: Datos Externos</h2>
+            <button id="btnCargarAPI">Cargar Usuario Aleatorio</button>
+            <div id="resultadoAPI" class="api-box">
+                <p>Presiona el botón para traer datos de la API...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
